@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>こまの日常</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- 最初に表示される動画 -->
     <div id="intro-wrapper">
-      <video id="intro-video" autoplay muted playsinline>
-        <source src="pagu.mp4" type="video/mp4" />
+      <video id="intro-video" autoplay muted playsinline webkit-playsinline>
+        <source src="pagu.mp4" type="video/mp4">
+        お使いのブラウザでは動画を再生できません。
       </video>
     </div>
+
     <!-- トップページ内容 -->
     <div id="main-content">
       <h1>Coma Days</h1>
       <p>URL</p>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
+

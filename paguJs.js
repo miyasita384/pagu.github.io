@@ -1,3 +1,4 @@
+const introVideo = document.getElementById("intro-video");
 const introWrapper = document.getElementById("intro-wrapper");
 const mainContent = document.getElementById("main-content"); 
 // 2秒後にフェードアウト開始 
