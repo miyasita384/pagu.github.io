@@ -1,21 +1,23 @@
-/* ページ全体の初期設定 */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
-    /* 動画再生中はスクロール禁止 */
+    /* 動画中はスクロール禁止 */
 }
 
-/* 動画を全画面に配置 */
-#video-container {
+/* 動画を全画面表示 */
+#intro-wrapper {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    background: black;
     z-index: 10;
+    opacity: 1;
+    transition: opacity 4s ease;
+    /* 2秒後から4秒かけて薄くする */
 }
 
 #intro-video {
@@ -24,17 +26,9 @@ body, html {
     object-fit: cover;
 }
 
-/* トップページ内容（最初は非表示） */
+/* トップページ（最初は非表示） */
 #main-content {
     opacity: 0;
     transition: opacity 1.5s ease;
-    position: relative;
-    z-index: 1;
     padding: 40px;
-}
-
-/* フェードアウト用 */
-.fade-out {
-    opacity: 0;
-    transition: opacity 1.5s ease;
 }
